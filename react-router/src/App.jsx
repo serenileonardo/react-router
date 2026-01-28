@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import './index.css'
+import { Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Products from "./pages/Products"
 
 function App() {
-
-
   return (
     <>
 
@@ -12,3 +13,4 @@ function App() {
 }
 
 export default App
+
