@@ -4,8 +4,14 @@ import Navbar from "../components/Navbar";
 export default function DefaultLayout() {
     return (
         <div>
-            <Navbar />
-            <Outlet />
+            <header>
+
+                <Navbar />
+            </header>
+            <main>
+
+                <Outlet />
+            </main>
 
         </div>
     )
