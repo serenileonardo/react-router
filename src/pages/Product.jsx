@@ -1,5 +1,6 @@
-import { useParams } from "react-router"
+import { Link, useParams } from "react-router"
 import { useEffect, useState } from "react";
+import NotFound from "./NotFound";
 
 export default function Product() {
 
@@ -12,8 +13,10 @@ export default function Product() {
             .then(data => setProduct(data))
     }, [id])
 
+
+
     if (!product) {
-        return <p>Caricamento...</p>
+        return <NotFound />
     }
 
     return (

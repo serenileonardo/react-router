@@ -6,6 +6,7 @@ import Products from "./pages/Products"
 import "./index.css"
 import DefaultLayout from "./layouts/DefaultLayout"
 import Product from "./pages/Product"
+import NotFound from "./pages/NotFound"
 
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Product />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+
     </BrowserRouter >
   )
 }
