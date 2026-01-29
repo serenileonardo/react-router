@@ -5,6 +5,8 @@ import About from "./pages/About"
 import Products from "./pages/Products"
 import "./index.css"
 import DefaultLayout from "./layouts/DefaultLayout"
+import Product from "./pages/Product"
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter >
