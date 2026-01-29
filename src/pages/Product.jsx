@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router"
+import { useParams } from "react-router"
 import { useEffect, useState } from "react";
 import NotFound from "./NotFound";
 
@@ -6,6 +6,8 @@ export default function Product() {
 
     const { id } = useParams();
     const [product, setProduct] = useState(null)
+
+
 
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${id}`)
